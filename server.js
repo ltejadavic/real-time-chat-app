@@ -10,7 +10,7 @@ const upload = multer({ dest: 'uploads/' }); // Store images in the "uploads" fo
 const mongoose = require('mongoose');
 
 // MongoDB connection
-mongoose.connect('mongodb+srv://Cluster24799:VFh1bnJRZV5R@cluster24799.dm9t2.mongodb.net/chatApp?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://########################')
   .then(() => console.log('Connected to MongoDB Atlas'))
   .catch((err) => console.error('MongoDB connection error:', err));
 
