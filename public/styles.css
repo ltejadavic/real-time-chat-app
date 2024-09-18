@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.chat-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.chat-section {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+.chat-room {
+    flex-grow: 1;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fafafa;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.message.user {
+    background-color: #e0f7fa;
+}
+
+.message.other {
+    background-color: #f1f8e9;
+}
+
+.chat-controls {
+    display: flex;
+    margin-top: 10px;
+}
+
+.chat-controls input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.chat-controls button {
+    padding: 10px;
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.chat-controls button:hover {
+    background-color: #1976d2;
+}
+
+.private-message-controls {
+    margin-top: 20px;
+}
+
+.private-message-controls input {
+    margin: 5px 0;
+    padding: 5px;
+}
+
+.private-message-controls button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.private-message-controls button:hover {
+    background-color: #0056b3;
+}
+
+body.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-theme .grid-cell {
+    border-color: #555;
+}
+
+body.dark-theme .message {
+    background-color: #444;
+}

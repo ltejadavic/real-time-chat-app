@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time Chat</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@4/dist/index.min.js"></script>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="user-section">
+            <label for="username">Choose a username:</label>
+            <input type="text" id="username" placeholder="Enter your username">
+            <button id="joinChat">Join Chat</button>
+        </div>
+
+        <div class="chat-section" style="display:none;">
+            <div class="chat-room">
+                <div class="message-container" id="message-container"></div>
+            </div>
+
+            <div class="chat-controls">
+                <input type="text" id="chatMessage" placeholder="Type your message">
+                <button id="emojiTrigger">😀</button> <!-- Emoji trigger -->
+                <button id="sendMessage">Send</button>
+            </div>
+
+            <!-- Private message controls -->
+            <div class="private-message-controls">
+                <input type="text" id="recipientUsername" placeholder="Recipient Username">
+                <input type="text" id="privateMessage" placeholder="Enter private message">
+                <button id="sendPrivateMessage">Send Private Message</button>
+            </div>
+
+            <!-- Profile picture upload -->
+            <input type="file" id="profilePicture" accept="image/*">
+
+            <!-- Theme toggle -->
+            <button id="themeToggle">Toggle Theme</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>
